@@ -34,7 +34,7 @@ const AppProvider = ({ children }) => {
     useEffect(() => {
         let timer = setTimeout(() => {
             getMovies(`${apiKey}&s=${quary}`)
-        }, 1500);
+        }, 1000);
         return () => clearTimeout(timer)
     }, [quary])
 

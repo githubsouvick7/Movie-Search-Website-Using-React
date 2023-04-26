@@ -18,12 +18,10 @@ const Search = () => {
                 <h1>Search Your Favourite Movie ...</h1>
                 <form action="#" onSubmit={(e) => e.preventDefault()}>
                     <div>
-                        {/* <input type="text" placeholder='Search Here ....'
+                        <input type="text" placeholder='Search Here ....'
                             value={quary}
                             onChange={(e) => setQuary(e.target.value)}
-                        /> */}
-                        <input type="text" value={quary} onChange={handleInputChange} placeholder="Search Any Movie Here ..." />
-                        <button className='btn' onClick={handleSearch}>Search</button>
+                        />
                     </div>
                 </form>
                 <div className="card-error">
